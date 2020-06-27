@@ -6,7 +6,7 @@ The project is going to fetch the live data from the API using Async/Await synta
 
 ## Link Demo
 
-
+https://corona-tracker-real-time.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
