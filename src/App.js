@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Cards, Charts, CountryPicker } from "./components"
 
 function App() {
   return (
     <div className="App">
-      App
+      <Cards />
+      <Charts />
+      <CountryPicker />
     </div>
   );
 }
