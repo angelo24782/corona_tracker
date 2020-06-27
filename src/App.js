@@ -8,12 +8,17 @@ function App() {
   const [data, setData] = useState({});
 
   useEffect(() => {
+    (async function () {
+      try {
+        const data = await fetchData();
 
-    const data = fetchData();
+        setData(data)
 
-    setData(data)
-
-    console.log(data);
+        console.log(data);
+      } catch (e) {
+        console.error(e);
+      }
+    })();
 
   }, [])
 
