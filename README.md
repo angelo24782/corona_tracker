@@ -6,6 +6,8 @@ The project is going to fetch the live data from the API using Async/Await synta
 
 ## Link Demo
 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -74,4 +76,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+"# corona_tracker" 
 "# corona_tracker" 
