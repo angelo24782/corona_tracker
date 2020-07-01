@@ -8,6 +8,7 @@ import image from './image/image.png';
 function App() {
 
   const [data, setData] = useState({});
+  const [country, setCountry] = useState("");
 
   useEffect(() => {
     (async function () {
@@ -22,14 +23,22 @@ function App() {
       }
     })();
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  const handleCountryChange = async (country) => {
+
+    const data = await fetchData(country);
+    setData(data);
+    setCountry(country);
+  }
 
   return (
     <div className={styles.container}>
       <img className={styles.image} src={image} alt="COVID-19" />
       <Cards data={data} />
-      <Charts />
-      <CountryPicker />
+      <CountryPicker handleCountryChange={handleCountryChange} />
+      <Charts data={data} country={country} />
     </div>
   );
 }
